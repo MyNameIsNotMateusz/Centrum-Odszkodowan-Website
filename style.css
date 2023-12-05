@@ -89,7 +89,7 @@ nav button#menuButton {
 
 .main{
     background-color: rgb(26 127 87 / 27%);
-    padding: 90px 185px;
+    padding: 0px 185px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,7 +144,7 @@ nav button#menuButton {
 }
 
 .offer {
-    padding: 110px 185px 0;
+    padding: 110px 185px;
 }
 
 .offer h3, 
@@ -204,7 +204,7 @@ nav button#menuButton {
 }
 
 .about{
-    padding: 185px;
+    padding: 110px 185px;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -214,6 +214,8 @@ nav button#menuButton {
 .about .left {
     background-color: rgb(26 127 87 / 27%);
     border-radius: 10px 10px 0 0;
+    width: 440px;
+    height: 440px;
 }
 
 .about .left img{
@@ -227,7 +229,7 @@ nav button#menuButton {
 }
 
 .contact{
-    padding: 110px;
+    padding: 110px 185px;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -239,11 +241,11 @@ nav button#menuButton {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 0 0 0 100px;
+    align-items: center;
 }
 
 .contact-header {
+    width: 70%;
     font-weight: bold;
     font-size: x-large;
     color: #1A7F57;
@@ -310,7 +312,7 @@ nav button#menuButton {
 
 .fourthRow {
     margin-top: 10px;
-    width: 55%;
+    width: 70%;
 }
 
 .fourthRow button {
@@ -340,7 +342,7 @@ nav button#menuButton {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 150px 0;
+    justify-content: center;
 }
 
 .contact-right h1 {
@@ -435,11 +437,12 @@ footer .bottom .links a{
 
     .contact {
         flex-direction: column;
+        justify-content: center;
         height: auto;
     }
 
     .contact-right {
-        padding: 0 0 0 100px;
+        align-items: center;
     }
 
     .contact-right h1, .contact-right p {
@@ -453,7 +456,7 @@ footer .bottom .links a{
 
 @media screen and (max-width: 992px) {
 
-    .main, .offer, .about {
+    .main, .offer, .about, .contact {
         height: auto;
         padding-left: 50px;
         padding-right: 50px;
@@ -461,6 +464,10 @@ footer .bottom .links a{
 
     .main .left {
         width: 85%;
+    }
+
+    .main .right {
+        margin-bottom: 0px;
     }
 
     .left, .right {
@@ -492,13 +499,12 @@ footer .bottom .links a{
         display: none;
     }
 
-    .contact {
-        padding-left: 0;
-        padding-right: 0;
+    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header {
+        width: 90%;
     }
 
-    .contact-left, .contact-right {
-        padding-left: 50px;
+    .contact-right h1, .contact-right p {
+        width: 90%;
     }
 
 }
@@ -528,14 +534,6 @@ footer .bottom .links a{
 
     .offer .offer-items{
         gap: 8px;
-    }
-
-    .firstRow, .secondRow, .thirdRow, .fourthRow {
-        width: 90%;
-    }
-
-    .contact-right h1, .contact-right p {
-        width: 90%;
     }
 
     .contact-header {
@@ -591,6 +589,16 @@ footer .bottom .links a{
 
     .contact-right h1, .contact-right p {
         width: 95%;
+    }
+
+    .about .left {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about .left img{
+        width: 300px;
+        height: 300px;
     }
 
 }
