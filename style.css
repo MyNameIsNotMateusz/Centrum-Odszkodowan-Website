@@ -155,15 +155,16 @@ nav button#menuButton {
 
 .offer .offer-items{
     display: flex;
+    justify-content: space-between;
     margin-top: 70px;
-    gap: 30px;
+    row-gap: 30px;
     cursor: pointer;
     flex-wrap: wrap;
 }
 
 .offer .offer-items .item{
     background-color: rgb(26 127 87 / 27%);
-    width: 31.9%;
+    width: 30%;
     border-radius: 10px;
     padding: 32px;
     border-bottom: 4px solid transparent;
