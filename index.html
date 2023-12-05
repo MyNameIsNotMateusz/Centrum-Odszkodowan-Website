@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Centrum Odszkodowań</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#main" class="nav-element">Strona Główna</a></li>
+            <li><a href="#offer" class="nav-element">Oferta</a></li>
+            <li><a href="#about" class="nav-element">O Firmie</a></li>
+        </ul>
+        <a href="#contact">
+            <button>Skontaktuj się z Nami</button>
+        </a>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Witajcie! Jesteśmy Centrum Odszkodowań</h5>
+            <h3>Zajmujemy się pomocą w odzyskaniu <span>odszkodowań</span> i czegoś tam.</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quaerat perspiciatis vero aut quis
+                architecto est, cum recusandae nemo nobis, at eius aspernatur temporibus explicabo iusto ex laborum
+                magni provident.
+            </p>
+            <a href="#contact">
+            <button>Skontaktuj się z Nami</button>
+            <a>
+
+        </div>
+        <div class="right">
+            <img src="./images/header-img.png" alt="Zdjęcie właściciela firmy">
+        </div>
+    </div>
+
+    <div class="offer" id="offer">
+        <h5>Oferta</h5>
+        <h3>Nasza Szczegółowa Oferta</h3>
+        <div class="offer-items">
+            <div class="item">
+                <div class="icon"><i class='bx bxs-car-crash'></i></div>
+                <h4>Odszkodowanie Komunikacyjne</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-male'></i></div>
+                <h4>Odszkodowanie Osobowe</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-money'></i></div>
+                <h4>Odszkodowanie Majątkowe</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-message-rounded-error'></i></div>
+                <h4>Odszkodowanie za Wypadek w Pracy</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-wrench'></i></div>
+                <h4>Odszkodowanie za Szkody Rzeczowe</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-user-minus'></i></div>
+                <h4>Zadośćuczynienia w Przypadku Śmierci Bliskiej Osoby</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-trending-down'></i></div>
+                <h4>Zwrot Kosztów za Leczenie,
+                    Rehabilitację, Dojazdów - Związanych z Wypadkiem
+                </h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-handicap'></i></div>
+                <h4>Renta Odszkodowawcza
+                    w Wyniku Utraty Częściowej lub
+                    Całkowitej Niezdolności do Pracy
+                </h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxs-bank'></i></div>
+                <h4>Kredyt we Frankach</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore aliquam
+                    minima autem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="./images/about-img.png" alt="Zdjęcie firmy">
+        </div>
+        <div class="right">
+            <h5>O Firmie</h5>
+            <h3>Poznaj Naszą Markę</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo temporibus consequatur dolores asperiores
+                consectetur tenetur soluta libero voluptates beatae quod omnis natus doloribus maiores, distinctio iusto
+                optio harum eum amet!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius rem inventore quasi, aperiam dolorum
+                officia perspiciatis mollitia totam nam sint. Voluptatibus sed, aspernatur excepturi impedit dignissimos
+                hic labore illo eligendi.
+            </p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-left">
+            <div class="contact-header">
+                <h1>Fill the form.</h1>
+                <h1>It's easy.</h1>
+            </div>
+            <div class="firstRow">
+                <input placeholder="First name">
+                <input placeholder="Last name">
+            </div>
+            <div class="secondRow">
+                <input placeholder="Email">
+            </div>
+            <div class="thirdRow">
+                <textarea placeholder="Write your message">
+                </textarea>
+            </div>
+            <div class="fourthRow">
+                <button>Send Message</button>
+            </div>
+        </div>
+        <div class="contact-separator"></div>
+        <div class="contact-right">
+            <h1>Let's talk about everything.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut et voluptas repudiandae sit odio alias,
+                dolore, facere similique minus nulla voluptatem dolores quisquam facilis maiores optio doloribus
+                delectus architecto laborum.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#" class="nav-element">Home</a></li>
+                <li><a href="#" class="nav-element">Facebook</a></li>
+                <li><a href="#" class="nav-element">Instagram</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="nav-element"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="nav-element"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>hej cos tam cos tam</p>
+            <div class="links">
+                <a href="#" class="nav-element">Privacy Policy</a>
+                <a href="#" class="nav-element">Terms of Services</a>
+                <a href="#" class="nav-element">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
