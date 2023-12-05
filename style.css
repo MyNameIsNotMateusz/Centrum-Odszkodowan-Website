@@ -89,7 +89,7 @@ nav button#menuButton {
 
 .main{
     background-color: rgb(26 127 87 / 27%);
-    padding: 0px 185px;
+    padding: 110px 185px;
     display: flex;
     align-items: center;
     justify-content: space-between;
