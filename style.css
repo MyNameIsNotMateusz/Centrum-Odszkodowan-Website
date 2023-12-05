@@ -328,7 +328,7 @@ nav button#menuButton {
  }
 
 .contact-separator {
-    height: 100%;
+    height: 700px;
     width: 1px;
     background-color: #282938;
 }
@@ -391,6 +391,11 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 1200px) {
+
+    .contact-separator {
+        width: 100%;
+        height: 1px;
+    }
 
     .main .left h5{
         font-size: 18px;
