@@ -430,7 +430,6 @@ footer .bottom .links a{
     .contact {
         flex-direction: column;
         justify-content: center;
-        height: auto;
     }
 
     .contact-right {
@@ -449,7 +448,6 @@ footer .bottom .links a{
 @media screen and (max-width: 992px) {
 
     .main, .offer, .about, .contact {
-        height: auto;
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -575,7 +573,7 @@ footer .bottom .links a{
         width: 100%;
     }
 
-    .firstRow, .secondRow, .thirdRow, .fourthRow {
+    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header {
         width: 95%;
     }
 
