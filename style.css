@@ -525,9 +525,6 @@ footer .bottom p{
         display: none;
     }
 
-    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header, .contact-right-details {
-        width: 90%;
-    }
 
 }
 
@@ -605,11 +602,6 @@ footer .bottom p{
         width: 100%;
     }
 
-    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header, .contact-right-details {
-        width: 95%;
-    }
-
-
     .about .left {
         width: 300px;
         height: 300px;
@@ -620,6 +612,31 @@ footer .bottom p{
         height: 300px;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .margin {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .links {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+        padding: 85px 22px;
+    }
+
+    .contact-right-details h1 {
+        font-size: 25px;
+    }
+
+    .contact-right-details p {
+        font-size: 13px;
+    }
 }
 
 @keyframes slideFromLeft {
