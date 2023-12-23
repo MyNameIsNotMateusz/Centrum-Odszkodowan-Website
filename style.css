@@ -378,6 +378,15 @@ footer .bottom{
     justify-content: space-between;
 }
 
+.links {
+    display: flex;
+}
+
+.margin {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .footer .top .social-links{
     display: flex;
     align-items: center;
