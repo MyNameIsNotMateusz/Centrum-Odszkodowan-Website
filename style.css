@@ -390,6 +390,36 @@ footer .bottom .links a{
     margin-left: 14px;
 }
 
+@media screen and (max-width: 1630px) {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+        width: 80%;
+    }
+
+    .contact-right h1, .contact-right p {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+        width: 90%;
+    }
+
+    .contact-right h1, .contact-right p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+        width: 96%;
+    }
+
+    .contact-right h1, .contact-right p {
+        width: 76%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     .contact-separator {
