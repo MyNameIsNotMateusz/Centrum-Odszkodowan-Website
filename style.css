@@ -214,9 +214,36 @@ nav button#menuButton {
 
 .about-container {
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: end;
 }
 
-.about .left {
+.about-container-details {
+    display: flex;
+    width: 65%;
+    align-items: center;
+}
+
+.about-container-details-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+}
+
+.about-container-details-img img {
+    width: 60px;
+    height: 60px;
+}
+
+.about-container-details .about-container-details-text {
+    line-height: 2.2;
+    color: #5e5959;
+    font-weight: 500;
+}
+
+/* .about .left {
     background-color: rgb(26 127 87 / 27%);
     border-radius: 10px 10px 0 0;
     width: 440px;
@@ -226,7 +253,7 @@ nav button#menuButton {
 .about .left img{
     width: 440px;
     height: 440px;
-}
+} */
 
 .contact{
     padding: 110px 185px;
