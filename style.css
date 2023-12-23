@@ -243,18 +243,6 @@ nav button#menuButton {
     font-weight: 500;
 }
 
-/* .about .left {
-    background-color: rgb(26 127 87 / 27%);
-    border-radius: 10px 10px 0 0;
-    width: 440px;
-    height: 440px;
-}
-
-.about .left img{
-    width: 440px;
-    height: 440px;
-} */
-
 .contact{
     padding: 110px 185px;
     display: flex;
@@ -440,12 +428,20 @@ footer .bottom p{
     .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-detail {
         width: 90%;
     }
+
+    .about-container-details {
+        width: 70%;
+      }
 }
 
 @media screen and (max-width: 1350px) {
     .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-details {
         width: 96%;
     }
+
+    .about-container-details {
+        width: 75%;
+      }
 }
 
 @media screen and (max-width: 1200px) {
@@ -481,12 +477,7 @@ footer .bottom p{
         width: 49%;
     }
 
-    .about .left img{
-        width: 370px;
-    }
-
-    .offer h3,
-    .about .right h3{
+    .offer h3, .about h3{
         font-size: 32px;
     }
 
@@ -502,6 +493,14 @@ footer .bottom p{
     footer .top ul{
         gap: 20px;
     }
+
+    .about-container {
+        align-items: start;
+    }
+
+    .about-container-details {
+        width: 85%;
+      }
 }
 
 @media screen and (max-width: 992px) {
@@ -537,11 +536,6 @@ footer .bottom p{
 
     .main{
         flex-direction: column;
-    }
-
-    .about{
-        flex-direction: column;
-        justify-content: center;
     }
 
     footer .top ul{
@@ -597,6 +591,10 @@ footer .bottom p{
         gap: 14px;
     }
 
+    .about-container-details {
+        width: 92%;
+      }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -625,15 +623,9 @@ footer .bottom p{
         width: 100%;
     }
 
-    .about .left {
-        width: 300px;
-        height: 300px;
-    }
-    
-    .about .left img{
-        width: 300px;
-        height: 300px;
-    }
+    .about-container-details {
+        width: 100%;
+      }
 
 }
 
@@ -646,6 +638,21 @@ footer .bottom p{
     .links {
         font-size: small;
     }
+
+    .about-container-details .about-container-details-text {
+        font-size: 15px;
+    } 
+
+    .about-container-details-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .about-container-details-img img {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -660,6 +667,21 @@ footer .bottom p{
     .contact-right-details p {
         font-size: 13px;
     }
+
+    .about-container-details .about-container-details-text {
+        font-size: 14px;
+    } 
+
+    .about-container-details-img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .about-container-details-img img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 @keyframes slideFromLeft {
