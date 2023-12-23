@@ -342,7 +342,7 @@ nav button#menuButton {
 }
 
 .contact-right-details {
-    width: 50%;
+    width: 70%;
 }
 
 .contact-right-details h1 {
@@ -353,7 +353,10 @@ nav button#menuButton {
 
 .contact-right-details p {
     line-height: 2.2;
+    color: #5e5959;
+    font-weight: 500;
 }
+
 
 footer{
     background-color: rgb(26 127 87 / 27%);
@@ -393,32 +396,20 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 1630px) {
-    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-detail {
         width: 80%;
-    }
-
-    .contact-right-details {
-        width: 60%;
     }
 }
 
 @media screen and (max-width: 1450px) {
-    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-detail {
         width: 90%;
-    }
-
-    .contact-right-details {
-        width: 70%;
     }
 }
 
 @media screen and (max-width: 1350px) {
-    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow {
+    .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-details {
         width: 96%;
-    }
-
-    .contact-right-details {
-        width: 76%;
     }
 }
 
@@ -473,10 +464,6 @@ footer .bottom .links a{
         align-items: center;
     }
 
-    .contact-right-details {
-        width: 70%;
-    }
-
     footer .top ul{
         gap: 20px;
     }
@@ -526,11 +513,7 @@ footer .bottom .links a{
         display: none;
     }
 
-    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header {
-        width: 90%;
-    }
-
-    .contact-right-details {
+    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header, .contact-right-details {
         width: 90%;
     }
 
@@ -610,13 +593,10 @@ footer .bottom .links a{
         width: 100%;
     }
 
-    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header {
+    .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-header, .contact-right-details {
         width: 95%;
     }
 
-    .contact-right-details {
-        width: 95%;
-    }
 
     .about .left {
         width: 300px;
