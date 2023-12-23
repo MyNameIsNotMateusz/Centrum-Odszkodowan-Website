@@ -103,10 +103,15 @@ nav button#menuButton {
     align-items: start;
 }
 
+.main .left h5 {
+    animation: slideFromLeft 2s 0.4s forwards;
+}
+
 .main .left h3{
     margin-top: 10px;
     font-weight: bold;
     font-size: 46px;
+    animation: slideFromLeft 2s 0.4s forwards;
 }
 
 .main .left h3 span {
@@ -117,6 +122,7 @@ nav button#menuButton {
     color: #1c1e53;
     font-size: 22px;
     margin-top: 20px;
+    animation: slideFromLeft 2s 0.4s forwards;
 }
 
 .main .left button {
@@ -127,6 +133,7 @@ nav button#menuButton {
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
+    animation: slideFromLeft 2s 0.4s forwards;
 }
 
 .main .right{
@@ -604,4 +611,15 @@ footer .bottom p{
         height: 300px;
     }
 
+}
+
+@keyframes slideFromLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
