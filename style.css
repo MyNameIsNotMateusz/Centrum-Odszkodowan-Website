@@ -338,19 +338,21 @@ nav button#menuButton {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 40px;
 }
 
-.contact-right h1 {
+.contact-right-details {
     width: 50%;
+}
+
+.contact-right-details h1 {
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: #1A7F57;
 }
 
-.contact-right p {
-    width: 50%;
-    line-height: 1.5;
+.contact-right-details p {
+    line-height: 2.2;
 }
 
 footer{
@@ -395,7 +397,7 @@ footer .bottom .links a{
         width: 80%;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 60%;
     }
 }
@@ -405,7 +407,7 @@ footer .bottom .links a{
         width: 90%;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 70%;
     }
 }
@@ -415,7 +417,7 @@ footer .bottom .links a{
         width: 96%;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 76%;
     }
 }
@@ -471,7 +473,7 @@ footer .bottom .links a{
         align-items: center;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 70%;
     }
 
@@ -528,7 +530,7 @@ footer .bottom .links a{
         width: 90%;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 90%;
     }
 
@@ -612,7 +614,7 @@ footer .bottom .links a{
         width: 95%;
     }
 
-    .contact-right h1, .contact-right p {
+    .contact-right-details {
         width: 95%;
     }
 
