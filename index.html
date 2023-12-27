@@ -63,9 +63,45 @@
                         aliquam
                         minima autem.
                     </p>
-                    <button onclick="toggleCollapse()">Read More!</button>
+                    <button onclick="toggleCollapse(this)">Read More!</button>
                 </div>
-                <div class="item-details" id="item-details">
+                <div class="item-details">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
+                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
+                    nihil eligendi!
+                </div>
+            </div>
+
+            <div class="offer-items-container">
+                <div class="item">
+                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
+                    <h4>Odszkodowanie Komunikacyjne</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
+                        aliquam
+                        minima autem.
+                    </p>
+                    <button onclick="toggleCollapse(this)">Read More!</button>
+                </div>
+                <div class="item-details">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
+                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
+                    nihil eligendi!
+                </div>
+            </div>
+
+            <div class="offer-items-container">
+                <div class="item">
+                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
+                    <h4>Odszkodowanie Komunikacyjne</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
+                        aliquam
+                        minima autem.
+                    </p>
+                    <button onclick="toggleCollapse(this)">Read More!</button>
+                </div>
+                <div class="item-details">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
                     soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
                     nihil eligendi!
@@ -228,23 +264,24 @@
     <script src="script.js"></script>
 
     <script>
-
-        document.getElementById("item-details").style.height = "0";
-        document.getElementById("item-details").style.opacity = "0";
-
-        function toggleCollapse() {
-
-            const collapseText = document.getElementById("item-details");
-
+        function toggleCollapse(button) {
+            // Znajdź rodzica buttona, którym jest element o klasie "item"
+            const item = button.closest('.item');
+    
+            // Znajdź rodzica elementu o klasie "item" (czyli "offer-items-container")
+            const offerItemsContainer = item.closest('.offer-items-container');
+    
+            // Znajdź element "item-details" dla danego "offer-items-container"
+            const collapseText = offerItemsContainer.querySelector('.item-details');
+    
             if (collapseText.style.height === "0px") {
                 collapseText.style.height = collapseText.scrollHeight + "px";
-                collapseText.style.opacity = "1"; // Dodaj tę linię
+                collapseText.style.opacity = "1";
             } else {
                 collapseText.style.height = "0px";
-                collapseText.style.opacity = "0"; // Dodaj tę linię
+                collapseText.style.opacity = "0";
             }
         }
-        
     </script>
 
 </body>
