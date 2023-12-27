@@ -69,6 +69,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
                     soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
                     nihil eligendi!
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla optio rerum tenetur repellendus a rem ut reiciendis quas dolorem eius assumenda dolore earum excepturi enim est repellat, sunt repudiandae.
                 </div>
             </div>
 
@@ -267,14 +269,14 @@
         function toggleCollapse(button) {
             // Znajdź rodzica buttona, którym jest element o klasie "item"
             const item = button.closest('.item');
-    
+
             // Znajdź rodzica elementu o klasie "item" (czyli "offer-items-container")
             const offerItemsContainer = item.closest('.offer-items-container');
-    
+
             // Znajdź element "item-details" dla danego "offer-items-container"
             const collapseText = offerItemsContainer.querySelector('.item-details');
-    
-            if (collapseText.style.height === "0px") {
+
+            if (collapseText.style.height === "0px" || collapseText.style.height === "") {
                 collapseText.style.height = collapseText.scrollHeight + "px";
                 collapseText.style.opacity = "1";
             } else {
