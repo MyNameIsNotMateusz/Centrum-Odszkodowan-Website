@@ -53,41 +53,6 @@
         <h5>Oferta</h5>
         <h3>Nasza Szczegółowa Oferta</h3>
         <div class="offer-items">
-            <div class="offer-items-container">
-                <div class="item">
-                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
-                    <h4>Odszkodowanie Komunikacyjne</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
-                        aliquam
-                        minima autem.
-                    </p>
-                    <button>Read More!</button>
-                </div>
-                <div class="item-details">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
-                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
-                    nihil eligendi!
-                </div>
-            </div>
-            
-            <div class="offer-items-container">
-                <div class="item">
-                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
-                    <h4>Odszkodowanie Komunikacyjne</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
-                        aliquam
-                        minima autem.
-                    </p>
-                    <button>Read More!</button>
-                </div>
-                <div class="item-details">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
-                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
-                    nihil eligendi!
-                </div>
-            </div>
 
             <div class="offer-items-container">
                 <div class="item">
@@ -98,68 +63,15 @@
                         aliquam
                         minima autem.
                     </p>
-                    <button>Read More!</button>
+                    <button onclick="toggleCollapse()">Read More!</button>
                 </div>
-                <div class="item-details">
+                <div class="item-details" id="item-details">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
                     soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
                     nihil eligendi!
                 </div>
             </div>
 
-            <div class="offer-items-container">
-                <div class="item">
-                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
-                    <h4>Odszkodowanie Komunikacyjne</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
-                        aliquam
-                        minima autem.
-                    </p>
-                    <button>Read More!</button>
-                </div>
-                <div class="item-details">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
-                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
-                    nihil eligendi!
-                </div>
-            </div>
-
-            <div class="offer-items-container">
-                <div class="item">
-                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
-                    <h4>Odszkodowanie Komunikacyjne</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
-                        aliquam
-                        minima autem.
-                    </p>
-                    <button>Read More!</button>
-                </div>
-                <div class="item-details">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
-                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
-                    nihil eligendi!
-                </div>
-            </div>
-
-            <div class="offer-items-container">
-                <div class="item">
-                    <div class="icon"><i class='bx bxs-car-crash'></i></div>
-                    <h4>Odszkodowanie Komunikacyjne</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus atque asperiores labore
-                        aliquam
-                        minima autem.
-                    </p>
-                    <button>Read More!</button>
-                </div>
-                <div class="item-details">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum id perferendis reprehenderit aut
-                    soluta enim saepe sint veniam quo labore facilis magnam hic rem magni blanditiis, repellat, eaque
-                    nihil eligendi!
-                </div>
-            </div>
         </div>
     </div>
 
@@ -314,6 +226,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+
+        document.getElementById("item-details").style.height = "0";
+        document.getElementById("item-details").style.opacity = "0";
+
+        function toggleCollapse() {
+
+            const collapseText = document.getElementById("item-details");
+
+            if (collapseText.style.height === "0px") {
+                collapseText.style.height = collapseText.scrollHeight + "px";
+                collapseText.style.opacity = "1"; // Dodaj tę linię
+            } else {
+                collapseText.style.height = "0px";
+                collapseText.style.opacity = "0"; // Dodaj tę linię
+            }
+        }
+        
+    </script>
 
 </body>
 
