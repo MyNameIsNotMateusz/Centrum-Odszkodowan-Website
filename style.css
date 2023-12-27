@@ -351,6 +351,9 @@ nav button#menuButton {
 .fourthRow {
     margin-top: 10px;
     width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fourthRow button {
@@ -367,6 +370,13 @@ nav button#menuButton {
     background-color: #1A7F57;
     border-color: #1A7F57;
     color: #fff;
+ }
+
+ .fourthRow .result {
+    font-weight: 500;
+    color: #1A7F57;
+    opacity: 0;
+    transition: all 0.2s ease;
  }
 
 .contact-separator {

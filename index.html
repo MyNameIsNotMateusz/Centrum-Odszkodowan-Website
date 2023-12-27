@@ -208,25 +208,44 @@
     </div>
 
     <div class="contact" id="contact">
-        <div class="contact-left">
+        <form class="contact-left">
             <div class="contact-header">
                 <h1>Wypełnij formularz, analiza bezpłatna.</h1>
             </div>
             <div class="firstRow">
-                <input placeholder="Imię">
-                <input placeholder="Nazwisko">
+                <input 
+                placeholder="Imię"
+                spellcheck="false"
+                required
+                type="text"
+                id="name">
+                <input 
+                placeholder="Nazwisko"
+                spellcheck="false"
+                required
+                type="text"
+                id="surname">
             </div>
             <div class="secondRow">
-                <input placeholder="Email">
+                <input placeholder="Email"
+                spellcheck="false"
+                required
+                type="text"
+                id="mail">
             </div>
             <div class="thirdRow">
-                <textarea placeholder="Napisz wiadomość...">
+                <textarea 
+                placeholder="Napisz wiadomość..."
+                spellcheck="false"
+                required
+                id="message">
                 </textarea>
             </div>
             <div class="fourthRow">
-                <button>Wyślij Wiadomość</button>
+                <button class="sendBtn" type="submit">Wyślij Wiadomość</button>
+                <p class="result"></p>
             </div>
-        </div>
+        </form>
         <div class="contact-separator"></div>
         <div class="contact-right">
             <div class="contact-right-details">
@@ -267,7 +286,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
