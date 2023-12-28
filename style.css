@@ -164,7 +164,7 @@ nav button#menuButton {
     margin-top: 70px;
     cursor: pointer;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 30px;
 }
 
 .offer .offer-items .offer-items-container {
@@ -177,8 +177,24 @@ nav button#menuButton {
     padding: 32px;
     border-bottom: 4px solid transparent;
     transition: all 0.3s ease;
-    height: 250px;
-    overflow: hidden;
+    height: 310px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer .offer-items .item::-webkit-scrollbar {
+	width: 8px;
+}
+
+.offer .offer-items .item::-webkit-scrollbar-thumb {
+	background: linear-gradient(transparent, #1A7F57);
+	border-radius: 6px;
+}
+
+.offer .offer-items .item::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(transparent, #1a7f575b);
 }
 
 .offer .offer-items .item:hover{
@@ -246,6 +262,7 @@ nav button#menuButton {
     cursor: pointer;
     transition: all 0.3s ease;
     color: #fff;
+    width: 30%;
 }
 
 .offer .offer-items .item button:hover {
@@ -483,6 +500,12 @@ footer .bottom p{
     font-size: 12px;
 }
 
+@media screen and (max-width: 1754px) {
+    .offer .offer-items .item button {
+        width: 45%;
+    }
+}
+
 
 @media screen and (max-width: 1630px) {
     .contact-header, .firstRow, .secondRow, .thirdRow, .fourthRow, .contact-right-detail {
@@ -498,6 +521,10 @@ footer .bottom p{
     .about-container-details, .about-short-description {
         width: 70%;
       }
+
+      .offer .offer-items .item{
+        height: 380px;
+    }
 }
 
 @media screen and (max-width: 1350px) {
