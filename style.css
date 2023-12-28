@@ -162,7 +162,6 @@ nav button#menuButton {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
-    row-gap: 30px;
     cursor: pointer;
     flex-wrap: wrap;
 }
@@ -184,12 +183,26 @@ nav button#menuButton {
 }
 
 .offer .offer-items .item-details {
-    margin-top: 20px;
-    border: 1px solid gray;
+    margin-top: 10px;
     overflow: hidden;
     height: 0px;
     transition: all 0.3s ease;
     opacity: 0;
+    padding: 32px 32px 17px 32px;
+    border-radius: 10px;
+    background-color: rgb(26 127 89 / 5%);
+    border: 1px solid #1a7f5711;
+    font-size: 14px;
+    line-height: 25px;
+    color: #1c1e53;
+}
+
+.offer .offer-items .item-details p {
+    margin-bottom: 15px;
+}
+
+.offer .offer-items .item-details span {
+    font-weight: 700;
 }
 
 .offer .offer-items .item .icon{
@@ -522,7 +535,7 @@ footer .bottom p{
         flex-wrap: wrap;
     }
 
-    .offer .offer-items .item{
+    .offer .offer-items .offer-items-container{
         width: 49%;
     }
 
@@ -668,7 +681,7 @@ footer .bottom p{
         width: 100%;
     }
 
-    .offer .offer-items .item{
+    .offer .offer-items .offer-items-container{
         width: 100%;
     }
 
