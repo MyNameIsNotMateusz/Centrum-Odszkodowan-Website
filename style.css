@@ -164,6 +164,7 @@ nav button#menuButton {
     margin-top: 70px;
     cursor: pointer;
     flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .offer .offer-items .offer-items-container {
@@ -176,6 +177,8 @@ nav button#menuButton {
     padding: 32px;
     border-bottom: 4px solid transparent;
     transition: all 0.3s ease;
+    height: 250px;
+    overflow: hidden;
 }
 
 .offer .offer-items .item:hover{
@@ -195,6 +198,7 @@ nav button#menuButton {
     font-size: 14px;
     line-height: 25px;
     color: #1c1e53;
+    display: none;
 }
 
 .offer .offer-items .item-details p {
