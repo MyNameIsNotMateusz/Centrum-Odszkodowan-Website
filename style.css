@@ -55,6 +55,7 @@ nav .logo a, footer .logo a{
 
 nav .logo img, footer .logo img {
     height: 55px;
+    width: 85px;
 }
 
 nav ul, footer .top ul{
@@ -482,11 +483,12 @@ footer .bottom{
     margin-right: 30px;
 }
 
-.footer .top .social-links{
+.social-links {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 22px;
+    width: 85px;
 }
 
 footer .separator{
