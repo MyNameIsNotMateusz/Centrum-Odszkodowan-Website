@@ -177,7 +177,7 @@ nav button#menuButton {
     padding: 32px;
     border-bottom: 4px solid transparent;
     transition: all 0.3s ease;
-    height: 310px;
+    height: 300px;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ nav button#menuButton {
 }
 
 .offer .offer-items .item::-webkit-scrollbar {
-	width: 8px;
+	width: 5px;
 }
 
 .offer .offer-items .item::-webkit-scrollbar-thumb {
@@ -521,10 +521,6 @@ footer .bottom p{
     .about-container-details, .about-short-description {
         width: 70%;
       }
-
-      .offer .offer-items .item{
-        height: 380px;
-    }
 }
 
 @media screen and (max-width: 1350px) {
