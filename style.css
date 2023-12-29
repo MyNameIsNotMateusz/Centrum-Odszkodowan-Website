@@ -635,6 +635,11 @@ footer .bottom p{
         display: none;
     }
 
+    .main .right {
+        height: 0px;
+        width: 0px;
+    }
+
 
 }
 
