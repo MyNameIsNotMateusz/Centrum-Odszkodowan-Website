@@ -144,6 +144,8 @@ nav button#menuButton {
     justify-content: center;
     align-items: center;
     margin-bottom: 140px;
+    width: 500px;
+    height: 500px;
 }
 
 .main .right img{
@@ -714,6 +716,10 @@ footer .bottom p{
         width: 100%;
     }
 
+    .offer .offer-items .item {
+        height: 350px;
+    }
+
     .about-container-details, .about-short-description {
         width: 100%;
       }
@@ -748,6 +754,10 @@ footer .bottom p{
         height: 40px;
     }
 
+    .offer .offer-items .item {
+        height: 390px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -779,6 +789,10 @@ footer .bottom p{
     .about-container-details-img img {
         width: 30px;
         height: 30px;
+    }
+
+    .offer .offer-items .item {
+        height: 420px;
     }
 
 }
