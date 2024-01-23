@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src=https://raw.githubusercontent.com/MyNameIsNotMateusz/Playlist-Pilot-Music/main/public/preview.JPG alt="logo" width=280 height=150 />
+<img src=https://raw.githubusercontent.com/MyNameIsNotMateusz/Centrum-Odszkodowan-Website/main/images/preview.JPG alt="logo" width=280 height=150 />
 
 <h1>Centrum Odszkodowan Website</h1>
 <p>Responsive website.</p>
